@@ -5,4 +5,4 @@ Live preview --> [Simple CV](https://1obanov.github.io/Simple-CV/)
 
 Here is the PSD file based on:
 
-![](https://github.com/1obanov/music-player/blob/master/images/music.jp)
+![](https://github.com/1obanov/Simple-CV/blob/master/images/simple_cv.jpg)
