@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Simple CV</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/skin.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/circle.css">
+  <link rel="stylesheet" href="css/ihover.css">
+
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css">
+
+  <script src="https://unpkg.com/circlebars@1.0.3/dist/circle.js"></script>
+  <script src="https://unpkg.com/circlebars@1.0.3/dist/jquery.min.js"></script>
+  <!-- Optionally add this to use a skin : -->
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/circlebars@1.0.3/dist/skins/whitecircle.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/skill.bars.jquery.js"></script>
+  <script src="js/jquery.mapit.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="buttons-wrapper">
+
+    <input id="slide1" type="radio" name="slider" checked>
+    <input id="slide2" type="radio" name="slider">
+    <input id="slide3" type="radio" name="slider">
+    <input id="slide4" type="radio" name="slider">
+
+    <ul class="slider">
+
+      <!-- Home Page -->
+      <li>
+        <div class="grid_container header">
+          <div class="row">
+            <div class="col-12">
+              <div class="title">
+                <h1>Simple CV</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid_container section">
+          <div class="row">
+            <div class="col-4 col-left">
+
+              <div class="img"></div>
+              <div class="header_imgtext">
+                <h1>Adeline Doe</h1>
+                <div class="social_icons">
+
+
+
+                  <ul class="social-icons squares">
+                    <li class="tab">
+                      <a href="#">
+      <i class="fa fa-facebook square"></i>
+      <span class="screen-reader"></span>
+    </a>
+                    </li>
+                    <li class="tab">
+                      <a href="#">
+      <i class="fa fa-twitter square"></i>
+      <span class="screen-reader"></span>
+    </a>
+                    </li>
+                    <li class="tab">
+                      <a href="#">
+      <i class="fa fa-google-plus square"></i>
+      <span class="screen-reader"></span>
+    </a>
+                    </li>
+                    <li class="tab">
+                      <a href="#">
+      <i class="fa fa-linkedin square"></i>
+      <span class="screen-reader"></span>
+    </a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-right">
+              <h3>ABOUT ME</h1>
+              <div class="profile">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet sem sit amet dolor luctus pellentesque. Pellentesque eleifend tellus at interdum elementum. Nam egestas molestie elit. Vivamus sed accumsan quam, a mollis magna. Nam aliquet eros eget sapien consequat tincidunt at vel nibh. Duis ut turpis mi. Duis nec scelerisque urna, sit amet varius arcu. Aliquam aliquet sapien quis mauris semper suscipit. Maecenas pharetra dapibus posuere.</p>
+
+              </div>
+              <div class="col-4 profile_grid">
+              <i class="fa fa-user"></i>
+              <h5>Personal Info</h5>
+              <ul class="adress">
+                <li><b>D.O.B</b>
+                  : 23-06-1980
+                </li>
+                <li>
+                  <b>JOB TITLE</b>
+                  : Web Designer
+                </li>
+                <li>
+                  <b>HOBBIES</b>
+                  : Reading and swimming
+                </li>
+              </ul>
+            </div>
+              <div class="col-4 profile_grid">
+                <i class="fa fa-envelope"></i>
+                <h5>Contact Me</h5>
+                <ul class="adress">
+                  <li><b>PHONE</b>
+                    <a href="tel:+01 111 222 3333">: +01 111 222 3333</a>
+                  </li>
+                  <li>
+                    <b>FAX</b>
+                    : +15 555 5678
+                  </li>
+                  <li>
+                    <b>ADDRESS</b>
+                     : 756 gb Place,NS Canada
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4 profile_grid">
+                <i class="fa fa-share-alt"></i>
+                <h5>Comments</h5>
+                <ul class="adress">
+                  <li><b>E-MAIL</b>
+                    :
+                    <a href="mailto:mail@example.com">mail@example.com</a>
+                  </li>
+                  <li>
+                    <b>WEBSITE</b>
+                    :
+                    <a href="www.myresume.com">www.myresume.com</a>
+                  </li>
+                  <li>
+                    <b>TWITTER</b>
+                    :
+                    <a href="">example@twitter</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- //Home Page -->
+
+      <li>
+
+        <!-- Skills -->
+        <div class="skills">
+          <div class="grid_container">
+            <div class="row">
+              <div class="col-8 col-left-skills">
+                <h3 class="skills_title">My Skills</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet sem sit amet dolor luctus pellentesque. Pellentesque eleifend tellus at interdum elementum. Nam egestas molestie elit. Vivamus sed accumsan quam, a mollis magna.
+                Nam aliquet eros eget sapien consequat tincidunt at vel nibh. Duis ut turpis mi. Duis nec scelerisque urna, sit amet varius arcu. Aliquam aliquet sapien quis mauris semper suscipit. Maecenas pharetra dapibus posuere. Praesent odio sem,
+                varius quis dolor vel, maximus dapibus mi. Pellentesque mattis mauris neque. Nam aliquam turpis ante, at cursus massa ullamcorper ut. Proin id diam id nisi sagittis pellentesque sed sit amet eros.
+              </p>
+              <div class="skills-info">
+
+                <div class="skillbar clearfix " data-percent="98%">
+                  <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+                  <div class="skillbar-bar" style="background: #e67e22;"></div>
+                  <div class="skill-bar-percent">98%</div>
+                </div>
+                <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="99%">
+                  <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+                  <div class="skillbar-bar" style="background: #3498db;"></div>
+                  <div class="skill-bar-percent">99%</div>
+                </div>
+                <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="95%">
+                  <div class="skillbar-title" style="background: #2c3e50;"><span>JavaScript</span></div>
+                  <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                  <div class="skill-bar-percent">95%</div>
+                </div>
+                <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="70%">
+                  <div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+                  <div class="skillbar-bar" style="background: #5a68a5;"></div>
+                  <div class="skill-bar-percent">70%</div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-4 col-right-skills">
+              <h3 class="skills-title">Lenguages</h3>
+              <div class="serv-row">
+                <div class="col-3">
+                  <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                </div>
+                <div class="col-9">
+                  <div class="col-6">
+                    <h4>Russian</h4>
+                  </div>
+                  <div class="col-6">
+                    <div id="circle-1" data-circle-fontSize="12px" data-circle-size="75px" data-circle-dialWidth=5 data-circle-skin="red">
+                      <div class="loader-bg">
+                        <div class="text"></div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="serv-row">
+                <div class="col-3">
+                  <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                </div>
+                <div class="col-9">
+                  <div class="col-6">
+                    <h4>Ukrainian</h4>
+                  </div>
+                  <div class="col-6">
+                    <div id="circle-2" data-circle-fontSize="12px" data-circle-size="75px" data-circle-dialWidth=5 data-circle-skin="red">
+                      <div class="loader-bg">
+                        <div class="text"></div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="serv-row">
+                <div class="col-3">
+                  <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                </div>
+                <div class="col-9">
+                  <div class="col-6">
+                    <h4>English</h4>
+                  </div>
+                  <div class="col-6">
+                    <div id="circle-3" data-circle-fontSize="12px" data-circle-size="75px" data-circle-dialWidth=5 data-circle-skin="red">
+                      <div class="loader-bg">
+                        <div class="text"></div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="serv-row">
+                <div class="col-3">
+                  <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                </div>
+                <div class="col-9">
+                  <div class="col-6">
+                    <h4>Polish</h4>
+                  </div>
+                  <div class="col-6">
+                    <div id="circle-4" data-circle-fontSize="12px" data-circle-size="75px" data-circle-dialWidth=5 data-circle-skin="red">
+                      <div class="loader-bg">
+                        <div class="text"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+  </div>
+
+  <!-- //Skills -->
+
+  </li>
+  <li>
+
+    <!-- Experience -->
+
+    <div class="experience">
+      <div class="grid_container">
+        <div class="row">
+          <div class="col-6 col-left-experience">
+            <h3>WORK EXPERIENCE</h3>
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           2014-2016
+        </a>
+      </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    <h4>Company Name</h4> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit sed quia.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          2013-2014
+        </a>
+      </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    <h4>Company Name</h4> Qui dolorem ipsum quia dolor sit amet, neque porro quisquam est, consectetur adipisci velit sed quia.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          2012-2013
+        </a>
+      </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    <h4>Company Name</h4> Porro quisquam est neque, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit sed quia.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3>MY EDUCATION</h3>
+            <div class="panel-group" id="accordion_ed" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOneEd">
+                  <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion_ed" href="#collapseOneEd" aria-expanded="false" aria-controls="collapseOneEd">
+          Master Degree (2010-2012)
+        </a>
+      </h4>
+                </div>
+                <div id="collapseOneEd" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneEd">
+                  <div class="panel-body">
+                    <h4>University Name</h4> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit sed quia.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwoEd">
+                  <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion_ed" href="#collapseTwoEd" aria-expanded="false" aria-controls="collapseTwoEd">
+          Diploma In Design
+        </a>
+      </h4>
+                </div>
+                <div id="collapseTwoEd" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwoEd">
+                  <div class="panel-body">
+                    <h4>University Name</h4> Qui dolorem ipsum quia dolor sit amet, neque porro quisquam est, consectetur adipisci velit sed quia.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-right-experience">
+
+            <h3>MY PROJECTS</h3>
+            <div class="row left_row projects">
+
+
+
+
+              <div class="col-5 image1">
+                <div class="ih-item square effect4">
+                  <a href="">
+                    <div class="img"><img src="images/g1.jpg" alt="img"></div>
+                    <div class="mask1"></div>
+                    <div class="mask2"></div>
+                    <div class="info">
+                      <h3>My Project</h3>
+                      <p>Description goes here</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="col-5 image2">
+                <div class="ih-item square effect4">
+                  <a href="">
+                    <div class="img"><img src="images/g2.jpg" alt="img"></div>
+                    <div class="mask1"></div>
+                    <div class="mask2"></div>
+                    <div class="info">
+                      <h3>My Project</h3>
+                      <p>Description goes here</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-5 image3">
+                <div class="ih-item square effect4">
+                  <a href="">
+                    <div class="img"><img src="images/g3.jpg" alt="img"></div>
+                    <div class="mask1"></div>
+                    <div class="mask2"></div>
+                    <div class="info">
+                      <h3>My Project</h3>
+                      <p>Description goes here</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-5 image4">
+                <div class="ih-item square effect4">
+                  <a href="">
+                    <div class="img"><img src="images/g4.jpg" alt="img"></div>
+                    <div class="mask1"></div>
+                    <div class="mask2"></div>
+                    <div class="info">
+                      <h3>My Project</h3>
+                      <p>Description goes here</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- //Experience -->
+  </li>
+  <li>
+    <!-- Contact -->
+
+    <div class="contact">
+      <div class="grid_container">
+        <div class="row">
+          <div class="col-12 contact_title">
+            <h3>CONTACT ME</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 contact_left">
+
+            <div id='map_canvas' data-toggle="mapit"></div>
+
+            <div class="contact_info">
+              <div class="col-6 left_side">
+                <p>756 global Place, North Sydney,</p>
+                <p>FA-2305,Canada</p>
+              </div>
+              <div class="col-6 right_side">
+                <p>Call us: <a href="tel:+01 111 222 3333">: +01 111 222 3333</a></p>
+
+                <p>E-mail: <a href="mailto:mail@example.com">mail@example.com
+                </a></p>
+
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="col-6 contact_right">
+            <form class="" action="" method="post">
+              <input type="text" name="Name" placeholder="Name" required="required">
+              <input type="email" name="email" placeholder="E-mail" required="required">
+              <input type="text" name="Subject" placeholder="Subject" required="required">
+              <textarea name="Message" placeholder="Message" required="required"></textarea>
+              <input type="submit" value="SUBMIT">
+            </form>
+
+          </div>
+        </div>
+        <div class="footer">
+          <p>© 2017 Simple CV. All rights reserved | Design by <span>w3layouts</span></p>
+        </div>
+      </div>
+    </div>
+    <!-- //Contact -->
+
+  </li>
+  </ul>
+
+  <label for="slide1"></label>
+  <label for="slide2" onclick="isCircle()"></label>
+  <label for="slide3"></label>
+  <label for="slide4"></label>
+
+  </div>
+
+
+  <!-- MAP -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd1x3D_TgfvBmtt497mTh3jInU7YesucU"></script>
+  <!-- //MAP -->
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
